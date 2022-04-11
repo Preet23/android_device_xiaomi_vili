@@ -265,6 +265,14 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/bin/init.qcom.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.sh \
     $(LOCAL_PATH)/rootdir/bin/vendor_modprobe.sh:$(TARGET_COPY_OUT_VENDOR)/bin/vendor_modprobe.sh
 
+# Input
+PRODUCT_COPY_FILES += \
+     $(LOCAL_PATH)/configs/input/idc/uinput-fpc.idc:system/usr/idc/uinput-fpc.idc
+    
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/input/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
+    $(LOCAL_PATH)/configs/input/keylayout/uinput-fpc.kl:system/usr/keylayout/uinput-fpc.kl 
+
 # IR
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
