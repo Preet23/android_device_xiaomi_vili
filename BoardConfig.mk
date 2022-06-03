@@ -6,16 +6,16 @@
 
 BOARD_VENDOR := xiaomi
 
-DEVICE_PATH := device/xiaomi/haydn
+DEVICE_PATH := device/xiaomi/vili
 
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # Inherit from proprietary files
-include vendor/xiaomi/haydn/BoardConfigVendor.mk
+include vendor/xiaomi/vili/BoardConfigVendor.mk
 
 # Inherit from proprietary files for miuicamera
--include vendor/xiaomi/haydn-miuicamera/products/board.mk
+#-include vendor/xiaomi/haydn-miuicamera/products/board.mk
 
 # A/B
 AB_OTA_UPDATER := true
@@ -49,7 +49,7 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a76
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := haydn,haydnin
+TARGET_OTA_ASSERT_DEVICE := vili
 
 # Audio
 AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
@@ -96,8 +96,8 @@ ODM_MANIFEST_NFC_FILES := \
     $(DEVICE_PATH)/configs/hidl/manifest-nfc.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_haydn
-TARGET_RECOVERY_DEVICE_MODULES := libinit_haydn
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_vili
+TARGET_RECOVERY_DEVICE_MODULES := libinit_vili
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
@@ -108,8 +108,8 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 KERNEL_LD := LD=ld.lld
 TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc LLVM=1
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CONFIG := vendor/haydn-qgki_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/haydn
+TARGET_KERNEL_CONFIG := vendor/vili-qgki_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/vili
 BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0 androidboot.hardware=qcom androidboot.memcg=1 androidboot.usbcontroller=a600000.dwc3 cgroup.memory=nokmem,nosocket console=ttyMSM0,115200n8 loop.max_part=7 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=0 pcie_ports=compat iptable_raw.raw_before_defrag=1 ip6table_raw.raw_before_defrag=1
 
 # Kernel modules

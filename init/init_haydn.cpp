@@ -89,13 +89,13 @@ void vendor_load_properties() {
     std::string product_sku;
 
     if (region == "IN") {
-        model = "M2012K11I";
+        model = "2107113SI";
         brand = "Xiaomi";
-        device = "haydnin";
-        fingerprint = "Xiaomi/haydn_in/haydnin:12/SKQ1.211001.001/V13.0.1.0.SKKINXM:user/release-keys";
-        description = "haydnin-user 12 SKQ1.211001.001 V13.0.1.0.SKKINXM release-keys";
-        marketname = "Mi 11X Pro";
-        mod_device = "haydn_in_global";
+        device = "vili";
+        fingerprint = "Xiaomi/vili_in/vili:12/SKQ1.211006.001/V13.0.2.0.SKDINXM:user/release-keys";
+        description = "vili_in-user 12 SKQ1.211006.001 V13.0.2.0.SKDINXM release-keys";
+        marketname = "Mi 11T Pro";
+        mod_device = "vili_global";
     } else if (region == "CN") {
             model = "M2012K11C";
             brand = "Redmi";

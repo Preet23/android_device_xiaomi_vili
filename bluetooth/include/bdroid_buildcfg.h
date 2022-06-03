@@ -40,7 +40,7 @@ inline const char* BtmGetDefaultName()
 	property_get("ro.boot.hardware.sku", sku, "");
 
 	if (!strcmp("IN", region)) {
-		return "Mi 11X Pro";
+		return "Mi 11T Pro";
 	}
 	if (!strcmp("CN", region)) {
         if (!strcmp("haydnpro", sku)) {
