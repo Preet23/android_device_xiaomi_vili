@@ -65,5 +65,5 @@
     <bool name="config_vendor_wifi_softap_owe_supported">true</bool>
 
     <!-- Do not translate. Default access point SSID used for tethering -->
-    <string name="wifi_tether_configure_ssid_default" translatable="false">Mi 11X Pro</string>
+    <string name="wifi_tether_configure_ssid_default" translatable="false">Mi 11T Pro</string>
 </resources>
