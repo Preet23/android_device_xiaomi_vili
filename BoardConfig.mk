@@ -17,6 +17,8 @@ include vendor/xiaomi/vili/BoardConfigVendor.mk
 # Inherit from proprietary files for miuicamera
 #-include vendor/xiaomi/haydn-miuicamera/products/board.mk
 
+#TEST COMMIT
+
 # A/B
 AB_OTA_UPDATER := true
 
